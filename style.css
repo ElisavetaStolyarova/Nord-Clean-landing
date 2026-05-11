@@ -1,0 +1,431 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter',sans-serif;
+            line-height: 1.45;
+            scroll-behavior: smooth;
+            color: #1a2f3a;
+        }
+
+        .Blocks {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 48px 0;        
+            border-bottom: 1px solid #EEF2F4;
+        }
+
+        .section:last-of-type {
+            border-bottom: none;
+        }
+
+        header {
+            border-bottom: 1px solid #eef2f4;
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 100;
+        }
+
+        .navbar {
+            background-color: #0F2E3F;
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 12px 24px;      
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffffff, #cde6ef);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: white;
+            letter-spacing: -0.3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #9fd3e0;
+        }
+        .Block1{
+            margin-top: 30px;
+        }
+        .Block1 h3, .Block2 h3, .Block3 h3, .Block4 h3, .Block5 h3, .Block6 h3, .Block7 h3, .Block8 h3 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #0F2E3F;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.2px;
+            font-family: 'Manrope', sans-serif;
+        }
+        .Block4 h3, .Block3 h3{
+            text-align: center;
+        }
+        .half-heading {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #2C5F7A;
+            margin-bottom: 0.85rem;
+            
+        }
+
+        .half-heading1{
+            text-align: center;
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #2C5F7A;
+            margin-bottom: 0.85rem;
+        }
+
+        .description, .block1text{
+            color: #3A5C6E;
+            line-height: 1.5;
+            margin-bottom: 0.9rem;
+           
+        }
+        a{
+            text-decoration: none;
+        }
+         .description{
+             font-size: 17px;
+             width: 1000px;
+         }
+        .about_desc {
+            font-size: 1rem;
+            max-width: 90%;
+            color: #3A5C6E;
+        }
+        
+        .info {
+            background: #F9FCFD;
+            border: 1px solid #E9F0F3;
+            border-radius: 28px;
+            padding: 1rem 1.5rem;    
+            margin-bottom: 0.9rem;
+            transition: 0.2s;
+            display: inline-block;
+        }
+
+        .info:hover {
+            background: white;
+            border-color: #C2E0E8;
+        }
+
+        .info h3 {
+            font-size: 1.2rem;
+            margin: 0rem 0 0.25rem;
+        }
+
+
+        .info-note {
+            background: #F0F7FA;
+            padding: 12px 20px;
+            border-radius: 24px;
+            margin-top: 1rem;
+            font-weight: 500;
+            color: #1F5E6E;
+            font-size: 0.95rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.2rem;  
+            margin-top: 1.8rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 1.2rem 1.4rem;
+            border-radius: 28px;
+            border: 1px solid #E9F0F3;
+            transition: 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-3px);
+            border-color: #C2E0E8;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .service-card p {
+            color: #4A6272;
+            font-size: 0.9rem;
+        }
+
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 1.6rem;
+        }
+
+        .process-step {
+            flex: 1;
+            min-width: 170px;
+            background: white;
+            border-radius: 28px;
+            padding: 1.2rem 1rem;
+            text-align: center;
+            border: 1px solid #E9F0F3;
+            transition: all 0.2s ease;
+        }
+
+        .process-step:hover {
+            transform: translateY(-4px);
+            border-color: #C2E0E8;
+            box-shadow: 0 8px 18px rgba(31, 123, 140, 0.06);
+        }
+
+        .step-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #C2D9E0;
+            margin-bottom: 0.4rem;
+        }
+
+        .process-step h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin: 0.3rem 0;
+            color: #0F2E3F;
+        }
+
+        .process-step p {
+            font-size: 0.85rem;
+            color: #4A6272;
+            line-height: 1.35;
+        }
+
+        .stage {
+            background: #F9FCFD;
+            border: 1px solid #E9F0F3;
+            border-radius: 28px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 0.9rem;
+            transition: 0.2s;
+            display: inline-block;
+            width: 450px;
+          
+        }
+
+        .stage:hover {
+            background: white;
+            border-color: #C2E0E8;
+        }
+
+        .icon {
+            font-size: 1.6rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .stage h3 {
+            font-size: 1.15rem;
+            margin: 0.2rem 0;
+
+        }
+
+        .stage p {
+            color: #4A6272;
+            margin-bottom: 0;
+        }
+
+        .benefits-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 1.2rem 0 0.5rem;
+        }
+
+        .benefits-list span {
+            background: #E6F4F8;
+            padding: 5px 16px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #1F5E6E;
+        }
+
+        .Block1 a, .Block8 a, .Block7 a {
+            display: inline-block;
+            background: #1F7B8C;
+            color: white;
+            padding: 10px 28px;
+            border-radius: 48px;
+            font-weight: 600;
+            transition: 0.2s;
+            margin: 0.5rem 0 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .Block1 a:hover, .Block8 a:hover, .Block7 a:hover {
+            background: #0E5E6E;
+            transform: translateY(-2px);
+        }
+
+        #leadForm {
+            margin-top: 1.2rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 5px;
+            color: #1E2A32;
+            font-size: 0.9rem;
+        }
+        
+        #leadForm input,
+        #leadForm select,
+        #leadForm textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 28px;
+            border: 1px solid #CFDFE5;
+            font-family: inherit;
+            font-size: 0.9rem;
+            background: white;
+        }
+
+        #leadForm input:focus,
+        #leadForm select:focus,
+        #leadForm textarea:focus {
+            outline: none;
+            border-color: #1F7B8C;
+            box-shadow: 0 0 0 3px rgba(31, 123, 140, 0.15);
+        }
+
+        .Block7 h3 {
+            text-align: center;
+        }
+       
+
+        .half {
+            text-align: center;
+            font-size: 1rem;
+            color: #2C5F7A;
+            margin-bottom: 0.5rem;
+        }
+
+        .block7text {
+            font-size: 15px;
+            color: #6c868e;
+            margin-top: 0.8rem;
+        }
+        
+        .Block8 p {
+            margin-bottom: 0.35rem;
+        }
+
+        .Block8 .info {
+            background: #F0F7FA;
+            padding: 12px 18px;
+            border-radius: 24px;
+            margin: 0.8rem 0 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            background: #0F2E3F;
+            padding: 28px 0;
+            text-align: center;
+            color: #B8D0DA;
+            border-top: 1px solid #1C485C;
+            margin-top: 0;
+        }
+
+        .footer .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .footer p {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+        @media (max-width: 640px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                gap: 20px;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .Blocks {
+                padding: 0 20px;
+            }
+            .stage {
+                padding: 1rem;
+            }
+            .process-steps {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+            .process-step {
+                min-width: auto;
+            }
+            .section {
+                padding: 38px 0;
+            }
+            .Block1 h3, .Block2 h3, .Block3 h3, .Block4 h3, .Block5 h3, .Block6 h3, .Block7 h3, .Block8 h3 {
+                font-size: 1.7rem;
+            }
+            .about_desc {
+                max-width: 100%;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0.6rem;
+            }
+        }
+      
